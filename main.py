@@ -23,7 +23,7 @@ class Suprematism(QWidget):
         self.qp = QPainter(self)
         self.qp.begin(self)
         side = randint(20, 100)
-        self.qp.setBrush(QColor(255, 255, 0))
+        self.qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
 
         self.qp.drawEllipse(QPointF(200, 200), side, side)
 
